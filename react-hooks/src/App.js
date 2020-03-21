@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import DataFatching from './component/DataFatching';
+import ComponentC from './component/ComponentC';
+// import DataFatching from './component/DataFatching';
 // import IntervalHookCounter from './component/IntervalHookCounter';
 // import MouseContainer from './component/MouseContainer';
 // import HookMouse from './component/HookMouse';
@@ -11,10 +12,20 @@ import DataFatching from './component/DataFatching';
 // import HookCounter from './component/HookCounter';
 // import ClassCounter from './component/ClassCounter';
 
+
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 function App() {
+
+
   return (
     <div className="App">
-      <DataFatching />
+      <UserContext.Provider value={'Luka'}>
+        <ChannelContext.Provider value={'lukadlm97'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+      {/* <DataFatching /> */}
       {/* <IntervalHookCounter /> */}
       {/* <MouseContainer /> */}
       {/* <HookMouse /> */}
