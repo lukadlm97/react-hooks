@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import CounterThree from './component/CounterThree';
 // import CounterOne from './component/CounterOne';
 // import ComponentC from './component/ComponentC';
 // import DataFatching from './component/DataFatching';
@@ -12,7 +13,7 @@ import './App.css';
 // import HookCounterTwo from './component/HookCounterTwo';
 // import HookCounter from './component/HookCounter';
 // import ClassCounter from './component/ClassCounter';
-import CounterTwo from './component/CounterTwo'
+// import CounterTwo from './component/CounterTwo'
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -21,13 +22,13 @@ function App() {
 
   return (
     <div className="App">
+      <CounterThree />
 
-      <CounterTwo />
 
 
 
       {/* <CounterOne /> */}
-
+      {/* <CounterTwo /> */}
       {/* <UserContext.Provider value={'Luka'}>
         <ChannelContext.Provider value={'lukadlm97'}>
           <ComponentC />
