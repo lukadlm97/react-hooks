@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import DataFatchingOne from './component/DataFatchingOne';
+import DataFetchingTwo from './component/DataFetchingTwo';
+// import DataFatchingOne from './component/DataFatchingOne';
 // import ComponentA from './component/ComponentA';
 // import ComponentB from './component/ComponentB'
 // import CounterThree from './component/CounterThree';
@@ -43,8 +44,8 @@ function App() {
 
   return (
     <div className="App">
-      <DataFatchingOne />
-
+      {/* <DataFatchingOne /> */}
+      <DataFetchingTwo />
 
 
 
