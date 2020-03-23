@@ -1,7 +1,8 @@
-import React,{useReducer} from 'react';
+import React from 'react';
 import './App.css';
-import ComponentA from './component/ComponentA';
-import ComponentB from './component/ComponentB'
+import DataFatchingOne from './component/DataFatchingOne';
+// import ComponentA from './component/ComponentA';
+// import ComponentB from './component/ComponentB'
 // import CounterThree from './component/CounterThree';
 // import CounterOne from './component/CounterOne';
 // import ComponentC from './component/ComponentC';
@@ -17,39 +18,47 @@ import ComponentB from './component/ComponentB'
 // import ClassCounter from './component/ClassCounter';
 // import CounterTwo from './component/CounterTwo'
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
-export const CountContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
+// export const CountContext = React.createContext()
 
-const initialState = 0
-const reducer = (state,action) => {
+// const initialState = 0
+// const reducer = (state,action) => {
 
-    switch(action){
-        case 'increment':
-            return state+1
-        case 'decrement':
-            return state-1
-        case 'reset':
-            return initialState
-         default:
-            return state
-    }
+//     switch(action){
+//         case 'increment':
+//             return state+1
+//         case 'decrement':
+//             return state-1
+//         case 'reset':
+//             return initialState
+//          default:
+//             return state
+//     }
 
-}
+// }
 
 function App() {
-  const [count,dispatch] = useReducer(reducer,initialState)
+  // const [count,dispatch] = useReducer(reducer,initialState)
 
   return (
     <div className="App">
+      <DataFatchingOne />
+
+
+
+
+
+
+
+
+
       {/* <CounterThree /> */}
-      <CountContext.Provider value={{countState:count,countDispatch:dispatch}}>
+      {/* <CountContext.Provider value={{countState:count,countDispatch:dispatch}}>
         Count - {count}
         <ComponentA />
         <ComponentB />
-      </CountContext.Provider>
-
-
+      </CountContext.Provider> */}
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* <UserContext.Provider value={'Luka'}>
